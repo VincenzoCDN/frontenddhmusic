@@ -9,3 +9,84 @@
 .secondContainer {
   height: 94%;
 }
+
+.bgMain1 {
+  background-image: url("/src/assets/artists/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgMain2 {
+  background-image: url("/src/assets/artists/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgMain3 {
+  background-image: url("/src/assets/artists/3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgMainA1 {
+  background-image: url("/src/assets/artists/a1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainA3 {
+  background-image: url("/src/assets/artists/a3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainB1 {
+  background-image: url("/src/assets/artists/b1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainB3 {
+  background-image: url("/src/assets/artists/b3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainC1 {
+  background-image: url("/src/assets/artists/c1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainC3 {
+  background-image: url("/src/assets/artists/c3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainA2 {
+  background-image: url("/src/assets/artists/a2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainB2 {
+  background-image: url("/src/assets/artists/b2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgMainC2 {
+  background-image: url("/src/assets/artists/c2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
