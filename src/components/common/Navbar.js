@@ -81,15 +81,9 @@ export default function Navbar() {
         </button>
         <button
           className="text-slate-100 px-2 hover:text-myBlue-400"
-          onClick={() => navigate("/music1")}
+          onClick={() => navigate("/dashboard")}
         >
           Dashboard
-        </button>
-        <button
-          className="text-slate-100 px-2 hover:text-myBlue-400"
-          onClick={logOut}
-        >
-          Logout
         </button>
       </div>
       <div
@@ -226,7 +220,7 @@ export default function Navbar() {
         className={
           !loggedIn
             ? "hidden"
-            : "flex relative items-center justify-center px-2"
+            : "hidden lg:flex relative items-center justify-center px-2"
         }
       >
         <a
