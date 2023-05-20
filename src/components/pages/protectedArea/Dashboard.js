@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo1 from "../../assets/logo1.png";
-import Navbar from "../Navbar";
+import logo1 from "../../../assets/logo1.png";
+import Navbar from "../../common/Navbar";
 
-export default function Music() {
+export default function Dashboard() {
   const [video, setVideo] = useState();
   const [title, setTitle] = useState();
   const [artistName, setArtistName] = useState();

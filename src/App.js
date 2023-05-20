@@ -1,16 +1,18 @@
-import Music from "./components/Music";
-import Music1 from "./components/protectedArea/Music1";
-import ProtectedArea from "../src/components/protectedArea/ProtectedArea";
+import ProtectedArea from "./components/pages/protectedArea/ProtectedArea";
 import { Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import Homepage from "./components/pages/Homepage";
+import Dashboard from "./components/pages/protectedArea/Dashboard";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Music />} />
+      <Route path="/" element={<Homepage />} />
       <Route element={<ProtectedArea />}>
-        <Route path="/music1" element={<Music1 />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Route>
-      <Route path="/music2" element={<Music1 />} />
+      <Route path="/dashboardprova" element={<Dashboard />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

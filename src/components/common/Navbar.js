@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo3 from "../assets/logo3.png";
+import logo3 from "../../assets/logo3.png";
 import { useNavigate } from "react-router-dom";
-import SignUpModal from "./modals/SignUpModal";
-import LoginModal from "./modals/LoginModal";
+import LoginModal from "./LoginModal";
+import SignUpModal from "./SignUpModal";
 
 export default function Navbar() {
   const [email, setemail] = useState("");
@@ -58,7 +58,7 @@ export default function Navbar() {
           myData !== "Invalid password"
         ) {
           alert("User logged in successfully");
-          localStorage.setItem("LOGGED", data);
+          localStorage.setItem("LOGGED", email);
           navigate("/music1");
         } else {
           alert(myStatus);
@@ -94,11 +94,13 @@ export default function Navbar() {
       </div>
       <div
         className={
-          !loggedIn ? "lg:flex justify-end items-center pr-2 hidden" : "hidden"
+          !loggedIn
+            ? "lg:flex justify-center gap-2 items-center pr-2 hidden w-fit"
+            : "hidden"
         }
       >
         <form
-          className="flex justify-center items-center gap-2 py-1 pr-0"
+          className="flex justify-center items-center gap-2 py-1"
           onSubmit={handleLogin}
         >
           <input
@@ -119,12 +121,14 @@ export default function Navbar() {
           />
           <button
             type="submit"
-            className="border-2 border-blue-500 m-0 px-3 py-0 bg-slate-300"
+            className="border-2 border-blue-500 mr-0 px-3 py-0 bg-slate-300"
           >
             Login
           </button>
         </form>
-        <SignUpModal />
+        <div>
+          <SignUpModal />
+        </div>
       </div>
       {/*  BURGER MENU */}
       <div className="px-2 py-1 lg:hidden z-10">
@@ -217,6 +221,24 @@ export default function Navbar() {
             </div>
           </div>
         )}
+      </div>
+      <div
+        className={
+          !loggedIn
+            ? "hidden"
+            : "flex relative items-center justify-center px-2"
+        }
+      >
+        <a
+          href="/"
+          className=" border-2 border-blue-500 m-0 px-3 py-0 bg-slate-300"
+          onClick={logOut}
+        >
+          Logout
+        </a>
+        <div className={"text-slate-100 absolute w-max top-1/4 right-full"}>
+          <p>Welcome, {loggedIn}</p>
+        </div>
       </div>
     </nav>
   );
