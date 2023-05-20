@@ -94,7 +94,7 @@ export default function Dashboard() {
       },
     })
       .then((data) => data.text())
-      .then((data) => setArtistData([...artistData, data]));
+      .then((data) => setArtistData(...artistData, data));
     // eslint-disable-next-line
   }, []);
 
@@ -103,10 +103,7 @@ export default function Dashboard() {
       <Navbar />
       <div className="secondContainer bg-gradient-to-b from-blue-900 to-blue-400 flex flex-col justify-center items-center gap-6">
         <div className="flex justify-around items-center gap-8 h-1/6 w-4/6 border-2 border-violet-900 relative">
-          <div
-            className="flex justify-center items-center"
-            onClick={() => console.log(artistData)}
-          >
+          <div className="flex justify-center items-center">
             {artistData[1]}
           </div>
           <div className="flex justify-center items-center">
