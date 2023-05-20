@@ -12,7 +12,12 @@ export default function Dashboard() {
   const [song, setSong] = useState(0);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/users/get-id`)
+    let myToken = localStorage.getItem("My Token");
+    fetch(`http://localhost:8080/users/get-id`, {
+      headers: {
+        Authorization: "application/json",
+      },
+    })
       .then((data) => data.text())
       .then((data) => console.log(data));
   }, []);
