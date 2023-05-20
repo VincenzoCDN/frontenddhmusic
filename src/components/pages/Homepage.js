@@ -37,11 +37,11 @@ export default function Homepage() {
       body: JSON.stringify(data),
     })
       .then((res) => res.text())
-      .then((data) => {
-        myStatus = data;
-        localStorage.setItem("My Token", data);
+      .then((datas) => {
+        myStatus = datas;
+        localStorage.setItem("My Token", datas);
       })
-      .then((data) => {
+      .then((datas) => {
         let myData = localStorage.getItem("My Token");
 
         if (
@@ -49,8 +49,10 @@ export default function Homepage() {
           myData !== "Bad input" &&
           myData !== "Invalid password"
         ) {
+          localStorage.setItem("loggedIn", data.email);
           alert("User logged in successfully");
-          navigate("/music1");
+
+          navigate("/dashboard");
         } else {
           alert(myStatus);
         }

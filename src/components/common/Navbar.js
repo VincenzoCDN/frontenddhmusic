@@ -10,7 +10,7 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const loggedIn = localStorage.getItem("LOGGED");
+  const loggedIn = localStorage.getItem("loggedIn");
 
   //LOGOUT
 
@@ -58,8 +58,8 @@ export default function Navbar() {
           myData !== "Invalid password"
         ) {
           alert("User logged in successfully");
-          localStorage.setItem("LOGGED", email);
-          navigate("/music1");
+          localStorage.setItem("loggedIn", email);
+          navigate("/dashboard");
         } else {
           alert(myStatus);
         }
