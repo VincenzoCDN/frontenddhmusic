@@ -11,9 +11,10 @@ export default function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const loggedIn = localStorage.getItem("loggedIn");
+  const userRole = localStorage.getItem('role')
+  const userName = localStorage.getItem('username')
 
   //LOGOUT
-
   function logOut() {
     localStorage.clear();
     navigate("/");
@@ -21,7 +22,6 @@ export default function Navbar() {
   }
 
   //NAVBAR LOGIN
-
   const handleemailChange = (event) => {
     setemail(event.target.value);
   };
@@ -231,7 +231,7 @@ export default function Navbar() {
           Logout
         </a>
         <div className={"text-slate-100 absolute w-max top-1/4 right-full"}>
-          <p>Welcome, {loggedIn}</p>
+          <p>Welcome, {userName && userName} STAUTS: {userRole && userRole}</p>
         </div>
       </div>
     </nav>
