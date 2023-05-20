@@ -10,6 +10,7 @@ function App() {
       <Route element={<ProtectedArea />}>
         <Route path="/music1" element={<Music1 />} />
       </Route>
+      <Route path="/music2" element={<Music1 />} />
     </Routes>
   );
 }
