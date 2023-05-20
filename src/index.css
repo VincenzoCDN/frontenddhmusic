@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 .mainContainer {
-  height: 6%;
+  min-height: 6%;
 }
 
 .secondContainer {
   height: 94%;
+  min-height: 94%;
 }
 
 .bgMain1 {
@@ -80,7 +81,7 @@
 .bgMainB2 {
   background-image: url("/src/assets/artists/b2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 70%;
   background-repeat: no-repeat;
 }
 

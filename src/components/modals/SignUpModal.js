@@ -55,7 +55,7 @@ export default function SignUpModal() {
   return (
     <>
       <button
-        className="border-2 border-blue-500 m-0 px-3 py-0 bg-slate-300"
+        className="lg:border-2 lg:border-blue-500 m-0 lg:px-3 py-0 lg:bg-slate-300 text-slate-200 lg:text-black border-b-2 border-slate-200 hover:text-slate-400"
         onClick={() => {
           setShowModal(true);
         }}
@@ -68,7 +68,7 @@ export default function SignUpModal() {
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
 
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gradient-to-t from-myBlue-700 to-myBlue-300 text-white outline-none focus:outline-none bg-blue-900">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gradient-to-t from-blue-900 to-blue-700 text-white outline-none focus:outline-none">
                 <form className="w-72 sm:w-96" onSubmit={register}>
                   <h1 className="text-xl text-center my-6 ">
                     Sign up and start listening to Music!
