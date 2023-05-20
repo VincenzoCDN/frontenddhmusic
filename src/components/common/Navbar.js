@@ -231,7 +231,7 @@ export default function Navbar() {
           Logout
         </a>
         <div className={"text-slate-100 absolute w-max top-1/4 right-full"}>
-          <p>Welcome, {userName && userName} STAUTS: {userRole && userRole}</p>
+          <p>Welcome, {loggedIn && loggedIn} STAUTS {userRole && userRole}</p>
         </div>
       </div>
     </nav>
