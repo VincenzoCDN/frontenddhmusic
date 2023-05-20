@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo1 from "../../../assets/logo1.png";
 import Navbar from "../../common/Navbar";
+import Footer from "../../common/Footer";
 
 export default function Dashboard() {
   const [video, setVideo] = useState();
   const [title, setTitle] = useState();
+  const [username, setUsername] = useState();
+  const [id, setId] = useState();
   const [artistName, setArtistName] = useState();
   const [song, setSong] = useState(0);
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/users/get-id`)
+      .then((data) => data.text())
+      .then((data) => console.log(data));
+  }, []);
 
   function inputHandle(event) {
     setSong(event.target.value);
@@ -92,6 +101,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
