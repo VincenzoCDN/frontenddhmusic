@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div className="thirdContainer w-full bg-gradient-to-b from-blue-300 to-blue-400 flex flex-col gap-3 py-1 md:gap-0 md:py-0 md:flex-row justify-between items-center px-5">
       <div>
-        © 2023 <a href="/">Spotify Emulator™</a>. All Rights Reserved.
+        © 2023 <a href="/">DH Music™</a>. All Rights Reserved.
       </div>
       <div className="flex gap-5">
         <a
