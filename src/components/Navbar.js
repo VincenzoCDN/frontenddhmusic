@@ -40,7 +40,6 @@ export default function Navbar() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        // your expected POST request payload goes here
         email,
         password,
       }),
@@ -93,7 +92,11 @@ export default function Navbar() {
           Logout
         </button>
       </div>
-      <div className="lg:flex justify-end items-center pr-2 hidden">
+      <div
+        className={
+          !loggedIn ? "lg:flex justify-end items-center pr-2 hidden" : "hidden"
+        }
+      >
         <form
           className="flex justify-center items-center gap-2 py-1 pr-0"
           onSubmit={handleLogin}
