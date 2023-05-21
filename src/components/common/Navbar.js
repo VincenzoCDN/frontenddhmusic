@@ -232,7 +232,7 @@ export default function Navbar() {
         </a>
         <div
           className={
-            "hidden md:inline-block text-slate-100 absolute w-max top-1/4 right-full"
+            "hidden md:flex items-center justify-center text-slate-100 absolute w-max top-1/6 right-full gap-2"
           }
         >
           {loggedIn && (

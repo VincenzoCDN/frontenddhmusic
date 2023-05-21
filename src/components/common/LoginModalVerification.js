@@ -3,7 +3,6 @@ import React, { useState } from "react";
 export default function LoginModal() {
   const [showModal, setShowModal] = React.useState(false);
   const [code, setCode] = useState("");
-
   const myId = localStorage.getItem("id");
 
   function handleInput(event) {
@@ -26,7 +25,11 @@ export default function LoginModal() {
       }
     )
       .then((res) => res.text())
-      .then((data) => alert(data));
+      .then((data) => {alert(data);
+         data === 'The code is correct. \nYour Account is validate now!' && window.location.reload(true)})
+      
+
+      setShowModal(false)
   }
 
   return (
@@ -35,7 +38,7 @@ export default function LoginModal() {
         className="lg:border-2 lg:border-blue-500 m-0 lg:px-3 py-0 lg:bg-slate-300 text-slate-200 lg:text-black border-b-2 border-slate-200 hover:text-slate-400"
         onClick={() => setShowModal(true)}
       >
-        Login
+        Verify Account
       </button>
       {showModal ? (
         <>

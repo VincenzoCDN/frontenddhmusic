@@ -405,7 +405,7 @@ export default function Dashboard() {
           }
         >
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1 cursor-pointer"
             onClick={handleVideo1}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -413,7 +413,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1 cursor-pointer"
             onClick={handleVideo2}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -421,7 +421,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard1 cursor-pointer"
             onClick={handleVideo3}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -434,7 +434,7 @@ export default function Dashboard() {
         </div>
         <div className="flex justify-around items-center gap-8 h-1/6 w-4/6 border-2 border-violet-900 relative p-1 bgDashboard0">
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2 cursor-pointer"
             onClick={handleVideobyGenre1}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -442,7 +442,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2 cursor-pointer"
             onClick={handleVideobyGenre2}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -450,7 +450,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard2 cursor-pointer"
             onClick={handleVideobyGenre3}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -463,7 +463,7 @@ export default function Dashboard() {
         </div>
         <div className="flex justify-around items-center gap-8 h-1/6 w-4/6 border-2 border-violet-900 relative p-1 bgDashboard02">
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3 cursor-pointer"
             onClick={handleLastSongs1}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -471,7 +471,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3 cursor-pointer"
             onClick={handleLastSongs2}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
@@ -479,7 +479,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3"
+            className="flex justify-center items-center border-2 border-violet-900 rounded-full h-16 w-16 md:h-24 md:w-24 text-3xl bgDashboard3 cursor-pointer"
             onClick={handleLastSongs3}
           >
             <div className="h-1/2 w-1/2 bg-blue-300 rounded-full flex justify-center items-center bg-opacity-80">
