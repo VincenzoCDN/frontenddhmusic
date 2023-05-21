@@ -11,7 +11,6 @@ function App() {
       <Route element={<ProtectedArea />}>
         <Route path="/dashboard" element={<Dashboard />} />
       </Route>
-      <Route path="/dashboardprova" element={<Dashboard />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

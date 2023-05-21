@@ -95,3 +95,38 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bgDashboard1 {
+  background-image: url("/src/assets/dashboard/artist.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgDashboard2 {
+  background-image: url("/src/assets/dashboard/genre.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgDashboard3 {
+  background-image: url("/src/assets/dashboard/last.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgDashboard0 {
+  background-image: url("/src/assets/dashboard/bg.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.bgDashboard02 {
+  background-image: url("/src/assets/dashboard/bg2.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
