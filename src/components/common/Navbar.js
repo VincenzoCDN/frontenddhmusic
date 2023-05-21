@@ -11,8 +11,7 @@ export default function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const loggedIn = localStorage.getItem("loggedIn");
-  const userRole = localStorage.getItem('role')
-  const userName = localStorage.getItem('username')
+  const userRole = localStorage.getItem("role");
 
   //LOGOUT
   function logOut() {
@@ -230,8 +229,27 @@ export default function Navbar() {
         >
           Logout
         </a>
-        <div className={"text-slate-100 absolute w-max top-1/4 right-full"}>
-          <p>Welcome, {loggedIn && loggedIn} STAUTS {userRole && userRole}</p>
+        <div
+          className={
+            "hidden md:inline-block text-slate-100 absolute w-max top-1/4 right-full"
+          }
+        >
+          <p>
+            Welcome, {loggedIn && loggedIn} &nbsp;&nbsp;{" "}
+            <span
+              className={
+                userRole === "Active"
+                  ? "text-green-400"
+                  : userRole === "Banned"
+                  ? "text-red-600"
+                  : userRole === "Admin"
+                  ? "text-yellow-500"
+                  : "text-black"
+              }
+            >
+              STATUS: {userRole && userRole}
+            </span>
+          </p>
         </div>
       </div>
     </nav>
