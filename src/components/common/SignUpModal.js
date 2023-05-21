@@ -27,7 +27,7 @@ export default function SignUpModal() {
   function register(e) {
     e.preventDefault();
 
-    if (
+    /* if (
       localStorage.getItem("currentUser") &&
       localStorage.getItem("currentUser").includes(allUserData.email)
     ) {
@@ -36,21 +36,21 @@ export default function SignUpModal() {
       localStorage.setItem(
         "currentUser",
         allUserData.email + allUserData.password
-      );
+      ); */
 
-      fetch("http://localhost:8080/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(allUserData),
-      })
-        .then((res) => res.text())
-        .then((data) => console.log(data));
-    }
+    fetch("http://localhost:8080/front2/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(allUserData),
+    })
+      .then((res) => res.text())
+      .then((data) => alert(data));
 
-    console.log(allUserData);
+    setShowModal(false);
   }
+  /*   } */
 
   return (
     <>

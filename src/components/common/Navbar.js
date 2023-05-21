@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo3 from "../../assets/logo3.png";
 import { useNavigate } from "react-router-dom";
 import LoginModal from "./LoginModal";
+import LoginModalVerification from "./LoginModalVerification";
 import SignUpModal from "./SignUpModal";
 
 export default function Navbar() {
@@ -234,22 +235,29 @@ export default function Navbar() {
             "hidden md:inline-block text-slate-100 absolute w-max top-1/4 right-full"
           }
         >
-          <p>
-            Welcome, {loggedIn && loggedIn} &nbsp;&nbsp;{" "}
-            <span
-              className={
-                userRole === "Active"
-                  ? "text-green-400"
-                  : userRole === "Banned"
-                  ? "text-red-600"
-                  : userRole === "Admin"
-                  ? "text-yellow-500"
-                  : "text-black"
-              }
-            >
-              STATUS: {userRole && userRole}
-            </span>
-          </p>
+          {loggedIn && (
+            <p>
+              Welcome, {loggedIn} &nbsp;&nbsp;{" "}
+              <span
+                className={
+                  userRole === "Active"
+                    ? "text-green-400"
+                    : userRole === "Banned"
+                    ? "text-red-600"
+                    : userRole === "Admin"
+                    ? "text-yellow-500"
+                    : "text-black"
+                    ? userRole === "not Active"
+                    : "hidden"
+                }
+              >
+                STATUS: {userRole && userRole}
+              </span>
+            </p>
+          )}
+          <div className={userRole !== "not Active" ? "hidden" : " "}>
+            <LoginModalVerification />
+          </div>
         </div>
       </div>
     </nav>

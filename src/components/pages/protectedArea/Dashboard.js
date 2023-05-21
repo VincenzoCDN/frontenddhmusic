@@ -64,7 +64,8 @@ export default function Dashboard() {
   useEffect(() => {
     localStorage.setItem("role", role);
     localStorage.setItem("username", username);
-  }, [role, username]);
+    localStorage.setItem("id", id);
+  }, [role, username, id]);
 
   //GET RANDOM ARTIST
   useEffect(() => {
